@@ -1,23 +1,30 @@
 name: gurobi_example_setup
 channels:
   - conda-forge
+  - mamba
+  - gurobi # Add this line to include Gurobi's Conda channel
 dependencies:
-  - python=3.10
+  - python
   - black
-  - flake8
   - isort
   - pip
   - typer
   - loguru
   - tqdm
+  - ipykernel
   - ipython
+  - jupyter
   - jupyterlab
+  - jupyter_client
+  - jupyter_core
   - matplotlib
   - notebook
   - numpy
   - pandas
   - scikit-learn
+  - seaborn
+  - gurobi
   - pip:
-    - python-dotenv
-    - mkdocs
-    - -e .
+      - python-dotenv
+      - mkdocs
+      - -e .
