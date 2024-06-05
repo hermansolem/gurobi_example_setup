@@ -24,6 +24,7 @@ dependencies:
   - scikit-learn
   - seaborn
   - gurobi
+  - prophet
   - pip:
       - python-dotenv
       - mkdocs
